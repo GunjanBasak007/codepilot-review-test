@@ -1,5 +1,5 @@
 export function calculateDiscount(price, discount) {
-  return price - discount;
+  return price + discount;
 }
 
 export function divide(a, b) {
