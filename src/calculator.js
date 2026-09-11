@@ -26,3 +26,7 @@ export function calculateFinalPrice(price, discount, tax) {
 
   return finalPrice;
 }
+
+export function calculateTax(price, taxRate) {
+  return price * taxRate;
+}
