@@ -1,5 +1,9 @@
 export function calculateDiscount(price, discount) {
-  return price + discount;
+  if (discount < 0) {
+    return price;
+  }
+
+  return price - discount;
 }
 
 export function divide(a, b) {
@@ -14,4 +18,11 @@ export function getTotal(items) {
   }
 
   return total;
+}
+
+export function calculateFinalPrice(price, discount, tax) {
+  const discountedPrice = price - discount;
+  const finalPrice = discountedPrice * tax;
+
+  return finalPrice;
 }
